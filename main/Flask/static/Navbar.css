@@ -1,0 +1,10 @@
+.Navbar {
+    background: crimson;
+    font-family: 'calibri';
+
+}
+.Navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
