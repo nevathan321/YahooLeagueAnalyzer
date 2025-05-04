@@ -51,7 +51,7 @@ Welcome to our sports analytics project focused on **Yahoo Fantasy Basketball**!
 
 ## 👥 Team
 
-Developed by **MonkeyTalks**  
+Developed by **MoneyTalks**  
 - Nevathan  
 - Muntasir  
 
