@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoneyTalks: Yahoo Fantasy Basketball Analyzer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            background-color: #f5f5f5;
+            display: flex; 
+        }
+     
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+        
+        .logo {
+            font-size: 48px;
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            flex-grow: 1;
+        }
+        
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .welcome-message h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .welcome-message p {
+            font-size: 18px;
+            color: #666;
+        }
+        
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            width: 100%;
+        }
+        
+        .feature {
+            flex-basis: calc(33.333% - 20px);
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        .feature i {
+            font-size: 36px;
+            color: #ff5722;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        .login-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .login-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+        
+        .yahoo-login-btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #400090;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        
+        .yahoo-login-btn:hover {
+            background-color: #5000b8;
+        }
+        
+        .yahoo-login-btn i {
+            margin-right: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .footer a {
+            color: #ff5722;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .feature {
+                flex-basis: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" id="login-container">
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-basketball-ball"></i>
+            </div>
+            <h1>MoneyTalks</h1>
+            <p class="subtitle">Yahoo Fantasy Basketball Analyzer + MVP Predictor</p>
+        </header>
+        
+        <main class="main-content">
+            <div class="welcome-message">
+                <h2>Welcome to MoneyTalks</h2>
+                <p>Your ultimate tool for fantasy basketball analysis and MVP predictions</p>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Stat Projections</h3>
+                    <p>ML-powered predictions for 2026 player performance</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-trophy"></i>
+                    <h3>MVP Rankings</h3>
+                    <p>Identify the most valuable players for H2H categories</p>
+                </div>
+                
+                <div class="feature">
+                    <i class="fas fa-users"></i>
+                    <h3>Team Analysis</h3>
+                    <p>Projected standings based on category totals</p>
+                </div>
+            </div>
+            
+            <div class="login-section">
+                <p>Connect to your Yahoo Fantasy account to get started</p>
+                <a href="/auth" class="yahoo-login-btn">
+                    <i class="fab fa-yahoo"></i>
+                    Login with Yahoo
+                </a>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>&copy; 2025 MoneyTalks | Created by Nevathan & Muntasir</p>
+            <a href="https://github.com/nevathan321/YahooLeagueAnalyzer" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+        </footer>
+    </div>
